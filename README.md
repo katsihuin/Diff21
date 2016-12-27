@@ -4,22 +4,20 @@
 
 ##Declaración de Variables
 
-- aSmile
-- bSmile
-- resultado
+- n
+- diff
 
 ##Ingreso de Datos
 
-- Pedir aSmile
-- Pedir bSmile
+- Pedir n
 
 ##Proceso
 
-- - Si bSmile es igual a aSmile entonces estamos en problemas, si no 
+- Si n es menor que 21, restar n de 21 y almacenar resultado en diff 
+- Si no restar 21 de n, multiplicar resultador por 2 y almacenarlo en diff. 
 
 ## Mostrar Resultados
 
-- Imprimir 1 si estamos en problemas 
-- Imprimir 0 si no estamos en problemas
+- Imprimir diff
 
 ## Fin
