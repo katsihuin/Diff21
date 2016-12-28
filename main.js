@@ -1,27 +1,21 @@
 function calcular()
 {
-	var  numberEntered = document.getElementById('numberEntered').value;
-	var numberValue=parseFloat(numberEntered);
+	var numberEntered = document.getElementById("numberEntered").value;
+	var resta = 21-parseFloat(numberEntered);
+	var doble = (parseFloat (numberEntered)-21)*2;
+	var salida = document.getElementById("salida");
 	
 	if(numberEntered == "" )
 	{
-		salida.innerHTML = "--";
-		document.getElementById("salida").innerHTML
-	}
-	else if (numberValue < 21 )
+		document.getElementById("salida").innerHTML = "<div class='alert'>Ingrese valores</div>";
+	} 
+	else if (numberEntered < 21 ) 
 	{
-		diff = 21- parseFloat(numberEntered.value);
-        var valueDiff = parseFloat(diferencia);
-        salida.innerHTML = valueDiff.toFixed(2);
-        document.getElementById("salida").innerHTML
-	
-	}
+		salida.innerHTML = resta;
+	} 
 	else 
 	{ 
-	   diff = ((parseFloat(numberEntered.value)-21)*2);
-        var valueDiff = parseFloat(diferencia);
-        salida.innerHTML = valueDiff.toFixed(2);
-        document.getElementById("salida").innerHTML
+	   salida.innerHTML = doble;
     }
 
 }
